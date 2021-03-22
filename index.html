@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <main>
+    <main id="main">
         <div class="container">
             <div class="x-invoice-type">
                 <div class="row justify-content-end">
@@ -275,8 +275,34 @@
                     </div>
                 </div>
             </div>
+            <div class="x-button-section">
+                <div class="row">
+                    <button type="button" class="btn btn-secondary btn-lg" disabled>Process document</button>
+                </div>
+            </div>
         </div>
     </main>
+    <div class="pulse-wrapper" style="display : none">
+        <div class="pulse"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script type='text/javascript' src='js/knockout-3.5.1.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
+
+<script type="text/javascript">
+    var viewIndex;
+
+    $(document).ready(function () {
+        viewIndex = new ViewIndex();
+
+        //bind to the main view
+        ko.applyBindings(viewIndex, $("#main").get(0));
+
+        viewIndex.init();
+    });
+
+</script>
