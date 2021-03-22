@@ -1,0 +1,124 @@
+
+main {
+    width: 805px;
+    height: 925px;
+    border: 1px solid grey;
+    margin-right: 570px;
+    margin-left: 570px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.x-invoice-type {
+    font-size: 22px;
+    opacity: 0.5;
+
+    .row {
+        justify-content: flex-end;
+    }
+}
+
+.x-logo-section {
+    margin-bottom: 20px;
+
+    .x-apple-img {
+        width: 35px;
+    }
+
+    .x-brand-text {
+        padding-top: 20px;
+        font-size: 22px;
+    }
+}
+
+.x-invoice-info,
+.x-client-info,
+.x-currency-type {
+    margin-bottom: 50px;
+}
+
+.x-table-section {
+
+    div {
+        text-align: center;
+    }
+
+    .col-item {
+        width: 100px;
+    }
+
+    .col-description {
+        width: 375px;
+    }
+
+    .col-quantity {
+        width: 100px;
+    }
+
+    .col-unit-price {
+        width: 100px;
+    }
+
+    .col-total {
+        width: 100px;
+    }
+
+    .x-table-header,
+    .x-table-content {
+        width: 780px;
+    }
+
+    .x-table-extension {
+        width: 783px;
+
+        .col-total {
+            width: 105px;
+        }
+    }
+
+    .x-table-header {
+        border: 1px solid grey;
+        border-top: 2px solid grey;
+        border-bottom: 0px;
+
+        div {
+            border-right: 1px solid grey;
+        }
+
+        div:last-child {
+            border: 0;
+        }
+    }
+
+    .x-table-content {
+        border: 1px solid grey;
+
+        div {
+            border-right: 1px solid grey;
+        }
+
+        div:last-child {
+            border: 0;
+        }
+    }
+
+    .x-table-extension {
+        div:last-child {
+            border: 1px solid grey;
+            border-top: 0;
+        }
+    }
+}
+
+.x-reference-info {
+    .x-reference-number,
+    .x-question-section,
+    .x-include-company-name {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        justify-content: center;
+    }
+}

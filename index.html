@@ -2,24 +2,281 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>HomeWork UiPath</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="shortcut icon" href="img/uipath.ico">
+    <meta charset="utf-8">
+    <title>HomeWork UiPath</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/uipath.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
+    <main>
+        <div class="container">
+            <div class="x-invoice-type">
+                <div class="row justify-content-end">
+                    VAT INVOICE
+                </div>
+            </div>
+            <div class="x-logo-section">
+                <div class="row">
+                    <div class="col-1">
+                        <img src="img/apple.png" class="x-apple-img" alt="Apple Logo">
+                    </div>
+                    <div class="col-4 x-brand-text">
+                        <span class="font-weight-bold">Apple Corp.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="x-invoice-info">
+                <div class="row">
+                    <div>
+                        <span>Invoice Number:&nbsp;</span>
+                    </div>
+                    <div>
+                        <span class="font-weight-bold">UK-INV-02345223</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span>Order ID:&nbsp;</span>
+                    </div>
+                    <div>
+                        <span>23450134</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span>Due Date:&nbsp;</span>
+                    </div>
+                    <div>
+                        <span>06/05/2018</span>
+                    </div>
+                </div>
+            </div>
+            <div class="x-client-info">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div>
+                                <span class="font-weight-bold">BILL TO:&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <span>ACME Ltd.</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <span>7 Rockfield Business Park, Old Station DR</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <span>Cheltenham</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <span>GL530AN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div>
+                                <span class="font-weight-bold">SHIP TO:&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <span>ACME Ltd.</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <span>7 Rockfield Business Park, Old Station DR</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <span>Cheltenham</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <span>GL530AN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="x-currency-type">
+                <div class="row">
+                    <div>
+                        <span>Currency:&nbsp;</span>
+                    </div>
+                    <div>
+                        <span>GBP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="x-table-section">
+                <div class="row x-table-header">
+                    <div class="col-item">
+                        <span>ITEM</span>
+                    </div>
+                    <div class="col-description">
+                        <span>DESCRIPTION</span>
+                    </div>
+                    <div class="col-quantity">
+                        <span>QUANTITY</span>
+                    </div>
+                    <div class="col-unit-price">
+                        <span>UNIT PRICE</span>
+                    </div>
+                    <div class="col-total">
+                        <span>TOTAL</span>
+                    </div>
+                </div>
+                <div class="row x-table-content">
+                    <div class="col-item">
+                        <span>Apple Ixel App</span>
+                    </div>
+                    <div class="col-description">
+                        <span>Apple Ixel Application -10 off</span>
+                    </div>
+                    <div class="col-quantity">
+                        <span>10</span>
+                    </div>
+                    <div class="col-unit-price">
+                        <span>£25.00</span>
+                    </div>
+                    <div class="col-total">
+                        <span>£250.00</span>
+                    </div>
+                </div>
+                <div class="row x-table-extension">
+                    <div class="col-item">
+                        <span></span>
+                    </div>
+                    <div class="col-description">
+                        <span></span>
+                    </div>
+                    <div class="col-quantity">
+                        <span></span>
+                    </div>
+                    <div class="col-unit-price">
+                        <span>SUBTOTAL</span>
+                    </div>
+                    <div class="col-total">
+                        <span>£250.00</span>
+                    </div>
+                </div>
+                <div class="row x-table-extension">
+                    <div class="col-item">
+                        <span></span>
+                    </div>
+                    <div class="col-description">
+                        <span></span>
+                    </div>
+                    <div class="col-quantity">
+                        <span></span>
+                    </div>
+                    <div class="col-unit-price">
+                        <span>VAT (20.00%)</span>
+                    </div>
+                    <div class="col-total">
+                        <span>£50.00</span>
+                    </div>
 
-<div class="content">
-    This is conent section
-</div>
-
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.js"></script>
+                </div>
+                <div class="row x-table-extension">
+                    <div class="col-item">
+                        <span></span>
+                    </div>
+                    <div class="col-description">
+                        <span></span>
+                    </div>
+                    <div class="col-quantity">
+                        <span></span>
+                    </div>
+                    <div class="col-unit-price">
+                        <span>TOTAL DUE</span>
+                    </div>
+                    <div class="col-total">
+                        <span>£350.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="x-reference-info">
+                <div class="row x-reference-number">
+                    <span> Reference the invoice number and remit to:&nbsp;</span>
+                </div>
+                <div class="row">
+                    <div>
+                        <span>Beneficiary Bank:&nbsp;</span>
+                    </div>
+                    <div>
+                        <span class="font-weight-bold">Lloyds Bank, NB</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span>Beneficiary Bank Swift:&nbsp;</span>
+                    </div>
+                    <div>
+                        <span class="font-weight-bold">LLYDUK4B</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span>Short Code:&nbsp;</span>
+                    </div>
+                    <div>
+                        <span class="font-weight-bold">30-35-02</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span>IBAN:&nbsp;</span>
+                    </div>
+                    <div>
+                        <span class="font-weight-bold">GB90LLYD30350224316228</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span>Beneficiary Account Name:&nbsp;</span>
+                    </div>
+                    <div>
+                        <span class="font-weight-bold">Apple Corp UK</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span>Beneficiary Account Number:&nbsp;</span>
+                    </div>
+                    <div>
+                        <span class="font-weight-bold">24316228</span>
+                    </div>
+                </div>
+                <div class="row x-include-company-name">
+                    <div>
+                        <span>Include Company Name:&nbsp;</span>
+                    </div>
+                </div>
+                <div class="row x-question-section">
+                    <div>
+                        <span>For questions please contact us via following email address: accounting@apple.com&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
