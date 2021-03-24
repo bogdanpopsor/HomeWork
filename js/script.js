@@ -5,7 +5,6 @@ function ViewIndex() {
     self.showLoadingState = ko.observable(false);
 
     self.init = function () {
-        console.log('init');
         self.showLoadingState(false);
     };
 
@@ -37,6 +36,21 @@ function ViewIndex() {
             const content = await rawResponse.json();
             self.showLoadingState(false);
             console.log(content);
+            for (let i in content.responses[0].textAnnotations) {
+                self.drawRectangle(content.responses[0].textAnnotations[i].boundingPoly);
+            }
         })();
+    };
+
+    self.drawRectangle = function (boundingPoly) {
+        var ctx = document.getElementById('myCanvas').getContext('2d');
+        ctx.beginPath();
+        ctx.lineWidth = 1;
+        ctx.lineTo(boundingPoly.vertices[0].x, boundingPoly.vertices[0].y);
+        ctx.lineTo(boundingPoly.vertices[1].x, boundingPoly.vertices[1].y);
+        ctx.lineTo(boundingPoly.vertices[2].x, boundingPoly.vertices[2].y);
+        ctx.lineTo(boundingPoly.vertices[3].x, boundingPoly.vertices[3].y);
+        ctx.lineTo(boundingPoly.vertices[0].x, boundingPoly.vertices[0].y);
+        ctx.stroke();
     };
 }

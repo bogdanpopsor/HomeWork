@@ -16,7 +16,10 @@
     <div class="container" data-bind="css:showLoadingState() ? 'x-loading-state' :'' ">
         <div class="image">
             <div class="row">
-                <img src="img/document.jpeg" id="Image" class="x-document-png" >
+                <img id="Image" src="img/document.jpeg" alt="The Scream" style="display: none">
+                <canvas id="myCanvas" width="1275" height="1650">
+                    Your browser does not support the HTML5 canvas tag.
+                </canvas>
             </div>
         </div>
         <div class="x-button-section">
@@ -34,6 +37,15 @@
 </body>
 
 </html>
+
+<script>
+    window.onload = function () {
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("Image");
+        ctx.drawImage(img, 0, 0);
+    };
+</script>
 
 <script type="text/javascript">
     var viewIndex;
