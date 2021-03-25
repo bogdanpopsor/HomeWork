@@ -86,6 +86,7 @@ function ViewIndex() {
         ctx.lineTo(boundingPoly.vertices[2].x, boundingPoly.vertices[2].y);
         ctx.lineTo(boundingPoly.vertices[3].x, boundingPoly.vertices[3].y);
         ctx.lineTo(boundingPoly.vertices[0].x, boundingPoly.vertices[0].y);
+        ctx.stroke();
 
         if (index != 0) {
             //set color to rectangle
@@ -95,7 +96,6 @@ function ViewIndex() {
 
             // set line color
             ctx.strokeStyle = self.shadeColor(color, -40);
-            ctx.stroke();
         }
 
         //set opacity
