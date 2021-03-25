@@ -1,3 +1,8 @@
+html {
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+}
 
 .x-button-section {
     .row {
@@ -6,10 +11,23 @@
 }
 
 .x-loading-state {
-    opacity: 0.3;
+    opacity: 0.2;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+.x-after-loading {
+    opacity: 1;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
 }
 
 .btn {
+    height: 68px;
     background-color: darkorange;
     border-color: darkorange;
 }
@@ -21,14 +39,14 @@
 //loading screen
 div.pulse-wrapper {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
 
 div.pulse {
-    height: 50px;
-    width: 50px;
+    height: 130px;
+    width: 130px;
     background-color: rgb(199, 153, 8);
     border-radius: 50%;
     animation: pulse 1.5s infinite;
