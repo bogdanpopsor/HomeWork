@@ -17,6 +17,11 @@ function ViewIndex() {
         }
         return color;
     };
+	
+	
+	
+	
+	
 
     self.shadeColor = function (color, percent) {
 
